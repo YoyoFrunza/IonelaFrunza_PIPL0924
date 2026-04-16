@@ -1,0 +1,18 @@
+# ex8 (✿◠ᴗ◠)
+
+notas = []
+
+for x in range(10):
+    nota = int(input("diga a nota do aluno: "))
+    notas.append(nota)
+
+media = sum(notas) / len(notas)
+
+cont = 0
+
+for nota in notas:
+    if nota >= media:
+        cont = cont + 1
+
+print("media:", media)
+print("notas acima ou iguais a media:", cont)
